@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # 可配置参数（可通过环境变量调整）
 MATRIX_SIZE = int(os.getenv('MATRIX_SIZE', 2500))  # 矩阵维度（默认1500x1500）
-LOOP_COUNT = int(os.getenv('LOOP_COUNT', 5))       # 计算循环次数
+LOOP_COUNT = int(os.getenv('LOOP_COUNT', 8))       # 计算循环次数
 
 @app.route('/')
 def cpu_intensive_task():
